@@ -16,9 +16,33 @@ int main(void) {
   scanf("%d %d", &s, &d);
 
   // TODO: Complete the rest of the categories
-  if(s < 120) {
+  if (s < d){
+    printf ("Error\n");
+  }
+  
+  else if(s < 120) {
     if(d < 80) {
       printf("Normal\n");
     }
+  }
+  else if ((s < 130) && (d <80)){
+    if (d < 80){
+    printf("Elevated\n");
+  }
+  }
+ else if ((s < 130) || (d <80)){
+    
+    printf("Stage 1 Hypertension\n");
+  
+  }
+   else if ((s > 140) && (d > 90)) {
+    
+    printf("Stage 2 Hypertension\n");
+  
+  }
+   else if ((s > 180) || (d > 120)) {
+    
+    printf("Hypertensive Crysis\n");
+  
   }
 }
